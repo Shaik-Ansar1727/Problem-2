@@ -1,0 +1,7 @@
+# JavaCollectionsDemo
+
+A small demo showing List, Set and Map usage and unit tests (JUnit 5).
+
+Run in IntelliJ: Import as Maven project, run `mvn test` or run `CollectionDemo.main`.
+
+See code in `src/main/java/com/example/collections`.
