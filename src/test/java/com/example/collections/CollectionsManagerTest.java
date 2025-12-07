@@ -28,7 +28,7 @@ public class CollectionsManagerTest {
     public void testSetOperations() {
         CollectionsManager mgr = new CollectionsManager();
         assertTrue(mgr.addToHashSet("a"));
-        assertFalse(mgr.addToHashSet("a")); // duplicate
+        assertFalse(mgr.addToHashSet("a"));
         assertTrue(mgr.containsInHashSet("a"));
         assertTrue(mgr.removeFromHashSet("a"));
         assertFalse(mgr.containsInHashSet("a"));

@@ -47,8 +47,13 @@ public class CollectionsManager {
     public Map<String, Person> getTreeMapSnapshot() { return new TreeMap<>(treeMap); }
 
     public List<String> searchInArrayListByPrefix(String prefix) {
-        return arrayList.stream()
-                .filter(s -> s.startsWith(prefix))
-                .collect(Collectors.toList());
+        List<String> result = new ArrayList<>();
+        for (String s : arrayList) {
+            if (s.startsWith(prefix)) {
+                result.add(s);
+            }
+        }
+        return result;
     }
+
 }
